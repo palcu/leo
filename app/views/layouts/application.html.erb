@@ -23,12 +23,10 @@
     <div id="main" role="main">
       <div class="container">
         <%= image_tag @cover, :class => 'cover' if @cover %>
-        <div class="content">
-           <div class="row">
-            <div class="span12">
-              <%= render 'layouts/messages' %>
-              <%= yield %>
-            </div>
+         <div class="row">
+          <div class="span12">
+            <%= render 'layouts/messages' %>
+            <%= yield %>
           </div>
           <footer>
           </footer>

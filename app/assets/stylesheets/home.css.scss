@@ -1,3 +1,21 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.carousel-inner { text-align: center; }
+.carousel .item > img { display: inline-block; }
+.carousel .item p, h4 {text-align:left;}
+
+.widget{
+  background-color: #F5F5F5;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+}
+.widget > * {
+  padding: 20px;
+  border: 1px solid #E3E3E3;
+}
+#myCarousel{
+  padding: 0px;
+}
