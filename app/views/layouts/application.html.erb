@@ -22,7 +22,7 @@
     </header>
     <div id="main" role="main">
       <div class="container">
-        <%= image_tag("cover.jpg") %>
+        <%= image_tag @cover, :class => 'cover' if @cover %>
         <div class="content">
            <div class="row">
             <div class="span12">
