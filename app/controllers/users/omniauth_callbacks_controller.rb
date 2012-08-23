@@ -14,6 +14,8 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
       if @user
         flash[:notice] = I18n.t "devise.omniauth_callbacks.success", :kind => "Facebook"
+        @user.fb_token = auth['credentials']['token']
+        @user.update_from_facebook
         sign_in_and_redirect @user, :event => :authentication
       else
         flash[:error] = "Nu ai contul pe website creat"

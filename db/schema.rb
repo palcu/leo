@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120822223520) do
+ActiveRecord::Schema.define(:version => 20120823002320) do
 
   create_table "clubs", :force => true do |t|
     t.string   "name"
@@ -49,6 +49,11 @@ ActiveRecord::Schema.define(:version => 20120822223520) do
     t.integer  "club_id"
     t.string   "provider"
     t.string   "uid"
+    t.string   "fb_token"
+    t.string   "bio"
+    t.string   "birthday"
+    t.string   "profile_photo"
+    t.string   "cover_photo"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
